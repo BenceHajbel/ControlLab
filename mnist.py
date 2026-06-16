@@ -32,7 +32,7 @@ test_loss, test_acc = model.evaluate(x_test, y_test)
 print(f'Test accuracy: {test_acc}')
 
 # Test a single image
-index = 0
+index = 3 
 prediction = model.predict(x_test[index:index+1])
 
 print("Predicted:", np.argmax(prediction))
